@@ -1,6 +1,7 @@
 # 🐍 Mis Ejercicios de Python desde Cero
 
-¡Hola! Soy  Yuliana y este es mi repositorio donde comparto todos los **ejercicios de Python** que voy realizando mientras aprendo desde cero.
+¡Hola! Soy  Yuliana y este es mi repositorio donde comparto todos los **ejercicios de Python** que voy publicando
+en mi cuenta de tiktok @yulia_learnig mientras aprendo desde cero.
 
 ## 🐰 ¿Qué encontrarás aquí?
 
