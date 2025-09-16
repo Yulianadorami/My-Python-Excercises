@@ -29,4 +29,4 @@ Si quieres seguir mi progreso o conectarte conmigo:
 
 
 
-> 🐰 **Si te sirven mis ejercicios, no dudes en darle una estrella ⭐ al repositorio y compartirlo para que más personas puedan aprender.**
+> 🐰 **Si te sirven mis ejercicios, no dudes en darle una estrella ⭐ al repositorio y compartirlo para que más personas para aprender juntos.**
