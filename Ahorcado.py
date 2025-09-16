@@ -1,0 +1,59 @@
+import random
+
+word_list = ["arbol", "carretera", "caballo"]
+#PRIMER PASO: GENERAR UNA PALABRA ALEATORIA
+
+lives = 6
+crear_espacios = ""
+palabra_elegida = random.choice(word_list)
+print(f"La palabra elegida es: {palabra_elegida}")
+
+#Crear espacios por cada letra de la palabra elegida
+for espacios_blanco in palabra_elegida:
+    crear_espacios += "_"
+print(crear_espacios)
+   
+
+#SEGUNDO PASO: PEDIR AL USUARIO QUE ELIGA UNA LETRA
+
+juego_terminado = False
+letras_correctas =[]
+def juego ():
+    while not juego_terminado:
+        eleccion_usuario = input("Elige la letra que tu intuición te diga: ").lower()
+
+        #print(eleccion_usuario)
+
+    #TERCER PASO:VALIDAR QUE LA LETRA ELEGIDA PERTENEZCA A LA PALABRA GENERADA INICIALMENTE
+    #Reemplazar los espacios si la letra es la correcta
+
+        palabra_reemplazar = ""
+        for validacion in palabra_elegida:
+            if validacion == eleccion_usuario:
+                palabra_reemplazar += eleccion_usuario
+                letras_correctas.append(eleccion_usuario)
+            elif validacion in letras_correctas:
+                palabra_reemplazar += validacion
+            else:
+                palabra_reemplazar += "_"     
+        print(palabra_reemplazar)
+        
+        #Reducir una vida si la letra es incorrecta
+        if eleccion_usuario not in palabra_elegida:
+            lives -= 1
+            if lives == 0:
+                juego_terminado = True
+                print("Perdiste")
+
+        #Cuantos espacios nos quedan 
+        cantidad_espacios = 0
+        for espacios in palabra_reemplazar:
+            if espacios == "_":
+                cantidad_espacios += 1
+        #print(cantidad_espacios)
+
+        if cantidad_espacios == 0:
+            juego_terminado = True
+            print("Ganaste")
+    if eleccion_usuario not in palabra_elegida:
+        juego
